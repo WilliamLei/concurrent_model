@@ -12,7 +12,8 @@ public class HelloWorld {
             }
         };
         thread.start();
-        Thread.yield();
+        Thread.sleep(1000);
+//        Thread.yield();
         System.out.println("Hello from main thread");
         thread.join();
     }
